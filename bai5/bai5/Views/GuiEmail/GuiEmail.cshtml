@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "GuiEmail";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<form name="f1" action="/GuiEmail/GuiEmail" method="post">
+    <div class="box">
+        <h4 style="text-align:left">CHỨC NĂNG GỬI EMAIL</h4>
+        Gửi từ Email   <input type="text" name="From" class="From"> <br />
+        Mật khẩu   <input type="password" name="Password" class="Password"> <br />
+        Gửi đến Email  <input type="text" name="To" class="To"> <br />
+        Tiêu đề    <input type="text" name="Subject" class="Subject"> <br />
+        Nội dung   <input type="text" name="Body" class="Body"> <br />
+        <style>
+
+            .From {
+                width: 300px;
+                margin-bottom: 24px;
+                margin-left: 24px;
+            }
+
+            .Password {
+                width: 300px;
+                margin-bottom: 24px;
+                margin-left: 24px;
+                text-align: justify;
+            }
+
+            .To {
+                width: 300px;
+                margin-bottom: 24px;
+                margin-left: 24px;
+            }
+
+            .Subject {
+                width: 300px;
+                margin-bottom: 24px;
+                margin-left: 24px;
+            }
+
+            .Body {
+                width: 300px;
+                margin-bottom: 24px;
+                margin-left: 24px;
+                padding: 100px;
+            }
+        </style>
+
+        <input type="submit" value="Gửi Email" />
+    </div>
+</form>
+
